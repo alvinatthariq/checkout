@@ -1,0 +1,8 @@
+input CheckoutInput {
+    items: [ScannedItem!]!
+}
+
+type ScannedItem {
+    sku: String!
+    qty: Float!
+}
