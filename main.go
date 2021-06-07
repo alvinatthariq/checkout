@@ -78,6 +78,12 @@ func checkoutItems(w http.ResponseWriter, r *http.Request) {
 
 	// validate sku
 	for _, item := range payload.Items {
+		if item.Qty < 1 {
+			fmt.Printf("SKU %v qty at least 1", item.Sku)
+			w.WriteHeader(400)
+			return
+		}
+
 		if val, ok := Items[item.Sku]; !ok || val.Qty < item.Qty {
 			fmt.Printf("SKU %v not exist or out of stock", item.Sku)
 			w.WriteHeader(400)
