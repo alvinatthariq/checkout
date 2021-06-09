@@ -20,7 +20,7 @@ User will send the requested items, system will calculate the price and list of 
 - clone this repo 
 - open terminal in the project folder
 - run `$ make run` on the terminal
-- send request in postman with URL `http://localhost:10000/checkout` and method POST
+- send request in Postman with URL `http://localhost:10000/checkout` and method `POST`
 
 ## Request Body Example
 ```json
@@ -48,7 +48,7 @@ User will send the requested items, system will calculate the price and list of 
 ```
 
 ## Available SKUs
-GOOGLE_HOME    = `120P90`
-MACBOOK_PRO    = `43N23P`
-ALEXA_SPEAKER  = `A304SD`
-RASPBERRY_PI_B = `234234`
+- GOOGLE_HOME    = `120P90`
+- MACBOOK_PRO    = `43N23P`
+- ALEXA_SPEAKER  = `A304SD`
+- RASPBERRY_PI_B = `234234`
